@@ -1,0 +1,16 @@
+.container {
+  position: relative;
+  z-index: 1;
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    padding-bottom: 0px;
+  }
+}
+
+.list {
+  min-width: 100%;
+  position: relative;
+  z-index: 1;
+  background-color: #1a1b1e;
+  padding: 0 1rem;
+}

@@ -1,0 +1,17 @@
+html {
+  background-color: #1a1b1e;
+}
+
+.highlight {
+  color: #3b5bdb;
+}
+
+.mantine-Accordion-chevron {
+  &[data-rotate] {
+    transform: rotate(-90deg);
+  }
+}
+
+.mantine-Badge-inner {
+  margin-left: 1;
+}

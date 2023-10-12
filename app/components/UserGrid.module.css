@@ -1,0 +1,6 @@
+.grid {
+  position: relative;
+  z-index: 1;
+  background-color: #1a1b1e;
+  padding: 0 1rem;
+}

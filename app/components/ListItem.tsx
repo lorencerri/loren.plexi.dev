@@ -6,10 +6,10 @@ import type { ReactNode } from "react";
 
 interface ListItemProps {
   title: string;
-  author: string;
+  author?: string;
   icon: ReactNode;
-  type: string;
-  description?: string;
+  description?: string | ReactNode;
+  tags?: { color: string; text: string }[];
   link?: string;
 }
 
@@ -17,7 +17,7 @@ export default function ListItem({
   title,
   author,
   icon,
-  type,
+  tags,
   description,
   link,
 }: ListItemProps) {
@@ -25,12 +25,17 @@ export default function ListItem({
     <Accordion.Item key={title} value={title} className={classes.item}>
       <Accordion.Control icon={icon} className={classes.control}>
         <Text className={classes.title}>{title}</Text>
-        <Badge size="sm" color="red" variant="dot" className={classes.badge}>
-          {type}
-        </Badge>
-        <Badge size="sm" variant="dot" className={classes.badge}>
-          {author}
-        </Badge>
+        {tags?.map((tag, index) => (
+          <Badge
+            key={index}
+            size="sm"
+            color={tag.color}
+            variant="dot"
+            className={classes.badge}
+          >
+            {tag.text}
+          </Badge>
+        ))}
       </Accordion.Control>
       <Accordion.Panel>
         <Group className={classes.group}>

@@ -1,16 +1,10 @@
 import classes from "./List.module.css";
 
 import {
-  IconBrandDiscord,
-  IconBrandGithub,
-  IconBrandTwitter,
   IconBrandYoutube,
+  IconBuildingCommunity,
   IconPackage,
   IconRobot,
-  IconTerminal,
-  IconBuildingBank,
-  IconBrowser,
-  IconPackages,
 } from "@tabler/icons-react";
 
 import { Accordion, Container } from "@mantine/core";
@@ -19,98 +13,123 @@ import ListItem from "./ListItem";
 export default function List() {
   return (
     <Container className={classes.container}>
-      <Accordion
-        maw={400}
-        defaultValue="Discord Server"
-        className={classes.list}
-      >
-        <ListItem
-          title="Discord Server"
-          icon={<IconBrandDiscord />}
-          description="Join our Discord server to get support, report bugs, and chat with the community."
-          type="Community"
-          author="Plexi Development"
-          link="https://discord.gg/plexidev"
-        />
+      <Accordion maw={400} defaultValue="Quick.db" className={classes.list}>
         <ListItem
           icon={<IconPackage />}
           title={"Quick.db"}
-          type="Project"
-          description="Our primary project, a database wrapper for better-sqlite3."
-          author={"Zelak"}
+          tags={[
+            { color: "green", text: "Active" },
+            { color: "blue", text: "Node.js" },
+            { color: "yellow", text: "5.7 Million Downloads" },
+          ]}
+          description={
+            <>
+              Quick.db is an open-source SQLite wrapper specifically designed
+              for Node.js. It was initially created as a complement to my
+              programming tutorials on YouTube, providing beginners with an
+              easy-to-use drag-and-drop database solution without having to
+              worry about setting up a complex system. Currently, Quick.db is
+              being used in over 47,000 public GitHub repositories and has been
+              downloaded more than 5.7 million times on NPM.
+            </>
+          }
           link={"https://github.com/plexidev/quick.db"}
         />
         <ListItem
-          icon={<IconBuildingBank />}
-          title={"Open Collective Page"}
-          description="Our Open Collective page shows our recurring expenses and how to contribute."
-          type="Internal"
-          author={"Plexi Development"}
-          link={"https://opencollective.com/plexidev"}
-        />
-        <ListItem
-          icon={<IconBrandYoutube />}
-          title={"YouTube Channel"}
-          type="Resource"
-          description="Our YouTube channel is where we post tutorials, showcases, and more."
-          author={"Plexi Development"}
-          link={"https://www.youtube.com/c/TrueXPixels"}
-        />
-        <ListItem
-          icon={<IconBrandTwitter />}
-          title={"Twitter"}
-          description="Follow us on Twitter to get updates on our projects and more."
-          type="Resource"
-          author={"Plexi Development"}
-          link={"https://twitter.com/plexidev"}
-        />
-        <ListItem
-          icon={<IconBrandGithub />}
-          title={"GitHub"}
-          type="Resource"
-          description="Check out our GitHub to see our open-source projects."
-          author={"Plexi Development"}
-          link={"https://github.com/plexidev"}
-        />
-        <ListItem
-          icon={<IconPackage />}
-          title={"QuickMongo"}
-          type="Project"
-          description="A MongoDB wrapper for quick.db."
-          author={"Zelak"}
-          link={"https://github.com/plexidev/quickmongo"}
-        />
-        <ListItem
-          icon={<IconTerminal />}
-          title={"Nora"}
-          type="Project"
-          description="Command line utility for renaming files in batch using regex with advanced control."
-          author={"Zelak"}
-          link={"https://github.com/Zelak312/nora_rename"}
+          icon={<IconBuildingCommunity />}
+          title={"Plexi Development"}
+          tags={[
+            { color: "green", text: "Active" },
+            { color: "yellow", text: "30,000+ Members" },
+          ]}
+          description={
+            <>
+              Plexi Development is a community that I founded to provide support
+              for my development projects. Since its inception in 2016, it has
+              grown to over 30,000 members primarily on our Discord forum. Our
+              community has also established a presence on other platforms such
+              as YouTube, GitHub, and Twitter. At present, we have a core team
+              of 12 volunteer students and software developers who maintain a
+              diverse range of open-source projects.
+            </>
+          }
+          link={"https://github.com/plexidev/quick.db"}
         />
         <ListItem
           icon={<IconRobot />}
-          title={"Guardian"}
-          type="Project"
-          description="A Discord bot that protects your server from malicious users."
+          title={"Server Captcha Bot"}
+          tags={[
+            { color: "yellow", text: "Sold" },
+            { color: "blue", text: "Node.js" },
+            { color: "yellow", text: "80,000+ Servers (Aug 2021)" },
+          ]}
+          description={
+            <>
+              Server Captcha Bot was an automated tool that I created to address
+              security and privacy gaps that were not originally covered by
+              Discord. It was first developed in 2018 and then sold in 2021 to a
+              different development studio. At the time of sale, it was
+              safeguarding over 80,000 servers with more than 18 million users.
+            </>
+          }
+          link={"https://top.gg/bot/512333785338216465"}
+        />
+        <ListItem
+          icon={<IconRobot />}
+          title={"Hypnospace"}
+          tags={[
+            { color: "green", text: "Active" },
+            { color: "blue", text: "TypeScript" },
+          ]}
+          description={
+            <>
+              As part of their original launch material, I partnered with the
+              Hypnospace team to develop a Discord bot that mimics the website
+              creation system of the game. This bot allows users to create their
+              own unique channels (websites) and share them with others within
+              the server, just like in the game. Click the link to learn more.
+            </>
+          }
           author={"lorencerri"}
           link={"https://github.com/lorencerri/discord-guardian"}
         />
         <ListItem
-          icon={<IconBrowser />}
-          title={"plexi.dev"}
-          type="Website"
-          description="This website, built with Mantine and Remix."
-          author={"lorencerri"}
-          link={"https://github.com/lorencerri/plexi.dev"}
+          icon={<IconBrandYoutube />}
+          title={"YouTube Channel"}
+          tags={[
+            { color: "red", text: "Inactive" },
+            { color: "yellow", text: "5.2k Subscribers" },
+          ]}
+          description={
+            <>
+              Previously, I created and uploaded programming tutorials that used
+              practical examples like Discord bots and chat applications.
+              However, the channel is currently inactive.
+            </>
+          }
+          author={"Plexi Development"}
+          link={"https://www.youtube.com/c/TrueXPixels"}
         />
         <ListItem
-          icon={<IconPackages />}
-          title={"adaptive-ui"}
-          type="Project"
-          description="A highly opinionated wrapper for Mantine to quickly scaffold data-driven web prototypes."
+          icon={<IconRobot />}
+          title={"Guardian"}
+          tags={[
+            { color: "red", text: "Inactive" },
+            { color: "blue", text: "Node.js" },
+            { color: "yellow", text: "63 Stars" },
+          ]}
+          description={
+            <>
+              One of my initial major projects was creating a Discord bot to
+              address security concerns during the early days of Discord. The
+              bot was designed to add an extra layer of rate limits on
+              administrator actions such as deleting channels, kicking users,
+              and more. Since these functionalities are now generally offered by
+              Discord, the bot is no longer actively maintained.
+            </>
+          }
           author={"lorencerri"}
-          link={"https://github.com/lorencerri/adaptive-ui"}
+          link={"https://github.com/lorencerri/discord-guardian"}
         />
       </Accordion>
     </Container>

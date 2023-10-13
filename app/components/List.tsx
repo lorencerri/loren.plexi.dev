@@ -88,7 +88,10 @@ export default function List() {
               play DOOM in a markdown file specifically on GitHub. It uses a web
               server to map endpoints to keyboard inputs, then renders the last
               few frames of the game in a .gif image. You can [play it
-              here](https://github.com/lorencerri).
+              here](https://github.com/lorencerri). According to the
+              [stats](https://github.com/lorencerri/play-doom#play-doom), over
+              174 games have been played on my GitHub README with 80,000+
+              keyboard inputs.
             </>
           }
           author={"lorencerri"}

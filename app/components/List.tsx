@@ -1,6 +1,7 @@
 import classes from "./List.module.css";
 
 import {
+  IconBrandAppleArcade,
   IconBrandYoutube,
   IconBuildingCommunity,
   IconPackage,
@@ -73,6 +74,25 @@ export default function List() {
             </>
           }
           link={"https://top.gg/bot/512333785338216465"}
+        />
+        <ListItem
+          icon={<IconBrandAppleArcade />}
+          title={"DOOM In GitHub"}
+          tags={[
+            { color: "green", text: "Stable" },
+            { color: "blue", text: "TypeScript" },
+          ]}
+          description={
+            <>
+              Just a fun side project I spent a weekend on, but it allows you to
+              play DOOM in a markdown file specifically on GitHub. It uses a web
+              server to map endpoints to keyboard inputs, then renders the last
+              few frames of the game in a .gif image. You can [play it
+              here](https://github.com/lorencerri).
+            </>
+          }
+          author={"lorencerri"}
+          link={"https://github.com/lorencerri/play-doom"}
         />
         <ListItem
           icon={<IconRobot />}

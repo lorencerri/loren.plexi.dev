@@ -12,6 +12,7 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 import { MantineProvider } from "@mantine/core";
+import { Analytics } from "@vercel/analytics/react";
 
 export const links: LinksFunction = () => [
   {
@@ -38,6 +39,7 @@ export default function App() {
           <Scripts />
           <LiveReload />
         </MantineProvider>
+        <Analytics />
       </body>
     </html>
   );

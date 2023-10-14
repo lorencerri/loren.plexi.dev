@@ -87,9 +87,18 @@ export default function List() {
               Just a fun side project I spent a weekend on, but it allows you to
               play DOOM in a markdown file specifically on GitHub. It uses a web
               server to map endpoints to keyboard inputs, then renders the last
-              few frames of the game in an embedded .gif image. You can <Anchor target="_blank" href="https://github.com/lorencerri">play it
-              here</Anchor>. According to the <Anchor target="_blank" href="https://github.com/lorencerri/play-doom#play-doom">stats</Anchor>, over
-              174 games have been played on my GitHub README with 80,000+
+              few frames of the game in an embedded .gif image. You can{" "}
+              <Anchor target="_blank" href="https://github.com/lorencerri">
+                play it here
+              </Anchor>
+              . According to the{" "}
+              <Anchor
+                target="_blank"
+                href="https://github.com/lorencerri/play-doom#play-doom"
+              >
+                stats
+              </Anchor>
+              , over 174 games have been played on my GitHub README with 80,000+
               keyboard inputs.
             </>
           }
@@ -106,10 +115,12 @@ export default function List() {
           description={
             <>
               As part of their original launch promotion, I was hired by the
-              Hypnospace team (specifically Mike Rose from No More Robots) to develop a Discord bot that mimics the website
-              creation system of the game. This bot allows users to create their
-              own unique channels (websites) and share them with others within
-              the server, just like in the game. It also included a variety of easter eggs from within the game.
+              Hypnospace team (specifically Mike Rose from No More Robots) to
+              develop a Discord bot that mimics the website creation system of
+              the game. This bot allows users to create their own unique
+              channels (websites) and share them with others within the server,
+              just like in the game. It also included a variety of easter eggs
+              from within the game.
             </>
           }
           author={"lorencerri"}
@@ -143,11 +154,12 @@ export default function List() {
           description={
             <>
               One of my initial major projects was creating a Discord bot to
-              address administrator-level security concerns during the early days of Discord. The
-              bot was designed to add an extra layer of rate limits on
-              destructive and irreversable actions such as deleting channels, kicking users,
-              and more. Since these functionalities are now generally offered by
-              Discord, the bot is no longer actively maintained.
+              address administrator-level security concerns during the early
+              days of Discord. The bot was designed to add an extra layer of
+              rate limits on destructive and irreversable actions such as
+              deleting channels, kicking users, and more. Since these
+              functionalities are now generally offered by Discord, the bot is
+              no longer actively maintained.
             </>
           }
           author={"lorencerri"}

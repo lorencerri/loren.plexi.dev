@@ -106,11 +106,11 @@ export default function List() {
           ]}
           description={
             <>
-              As part of their original launch material, I partnered with the
-              Hypnospace team to develop a Discord bot that mimics the website
+              As part of their original launch promotion, I was hired by the
+              Hypnospace team (specifically Mike Rose from No More Robots) to develop a Discord bot that mimics the website
               creation system of the game. This bot allows users to create their
               own unique channels (websites) and share them with others within
-              the server, just like in the game. Click the link to learn more.
+              the server, just like in the game. It also included a variety of easter eggs from within the game.
             </>
           }
           author={"lorencerri"}

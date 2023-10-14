@@ -8,7 +8,7 @@ export default function CustomHero() {
       <Container p={0} size={600}>
         <Text size="lg" c="dimmed" className={classes.description}>
           I'm <span className="highlight">Loren Cerri</span>, a full-stack
-          freelance software developer, student, software development educator,
+          freelance software developer, student, educator,
           and open source maintainer.
         </Text>
       </Container>

@@ -146,7 +146,7 @@ export default function List() {
               One of my initial major projects was creating a Discord bot to
               address administrator-level security concerns during the early days of Discord. The
               bot was designed to add an extra layer of rate limits on
-              administrator actions such as deleting channels, kicking users,
+              destructive and irreversable actions such as deleting channels, kicking users,
               and more. Since these functionalities are now generally offered by
               Discord, the bot is no longer actively maintained.
             </>

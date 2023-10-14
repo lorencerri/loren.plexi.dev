@@ -144,7 +144,7 @@ export default function List() {
           description={
             <>
               One of my initial major projects was creating a Discord bot to
-              address security concerns during the early days of Discord. The
+              address administrator-level security concerns during the early days of Discord. The
               bot was designed to add an extra layer of rate limits on
               administrator actions such as deleting channels, kicking users,
               and more. Since these functionalities are now generally offered by

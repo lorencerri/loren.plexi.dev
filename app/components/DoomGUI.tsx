@@ -15,10 +15,10 @@ import { type ReactNode, useState } from "react";
 import axios from "axios";
 import {
   IconArcheryArrow,
-  IconArrowBigDownFilled,
-  IconArrowBigLeftFilled,
-  IconArrowBigRightFilled,
-  IconArrowBigUpFilled,
+  IconArrowBadgeDownFilled,
+  IconArrowBadgeLeftFilled,
+  IconArrowBadgeRightFilled,
+  IconArrowBadgeUpFilled,
   IconHandClick,
   IconHourglass,
   IconRefresh,
@@ -141,28 +141,28 @@ export default function DoomGUI() {
                 count={0}
                 text="Forward"
                 action="input"
-                icon={<IconArrowBigUpFilled width={18} />}
+                icon={<IconArrowBadgeUpFilled width={18} />}
                 input="u,"
               />
               <GameButton
                 count={0}
                 text="Left"
                 action="input"
-                icon={<IconArrowBigLeftFilled width={18} />}
+                icon={<IconArrowBadgeLeftFilled width={18} />}
                 input="l,"
               />
               <GameButton
                 count={0}
                 text="Right"
                 action="input"
-                icon={<IconArrowBigRightFilled width={18} />}
+                icon={<IconArrowBadgeRightFilled width={18} />}
                 input=",,"
               />
               <GameButton
                 count={0}
                 text="Backward"
                 action="input"
-                icon={<IconArrowBigDownFilled width={18} />}
+                icon={<IconArrowBadgeDownFilled width={18} />}
                 input=",,"
               />
             </Group>

@@ -1,5 +1,7 @@
 import type * as Party from "partykit/server";
 
+// TODO: Move to separate repo
+
 type ConnectionCountUpdate = {
   action: "connectionCountUpdate";
   connectionCount: number;

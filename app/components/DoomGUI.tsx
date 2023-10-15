@@ -156,14 +156,14 @@ export default function DoomGUI() {
                 text="Right"
                 action="input"
                 icon={<IconArrowBadgeRightFilled width={18} />}
-                input=",,"
+                input="r,"
               />
               <GameButton
                 count={0}
                 text="Backward"
                 action="input"
                 icon={<IconArrowBadgeDownFilled width={18} />}
-                input=",,"
+                input="d,"
               />
             </Group>
           </Fieldset>

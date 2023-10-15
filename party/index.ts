@@ -17,7 +17,15 @@ export default class Server implements Party.Server {
     this.sendConnectionCountUpdate();
   }
 
-  onMessage(_message: string, _sender: Party.Connection) {}
+  onMessage(message: string, sender: Party.Connection) {
+    const data = JSON.parse(message);
+    if (data.action === "screenUpdate") {
+      for (const connection of this.party.getConnections()) {
+        if (connection === sender) continue;
+        connection.send(JSON.stringify({ action: "screenUpdate" }));
+      }
+    }
+  }
 
   // Helper Methods
   sendConnectionCountUpdate() {

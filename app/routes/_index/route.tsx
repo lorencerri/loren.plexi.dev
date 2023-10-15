@@ -7,7 +7,7 @@ import List from "~/components/List";
 import { AdaptiveLayout } from "~/components/adaptive-ui/Layout/AdaptiveLayout";
 import { Header } from "~/components/adaptive-ui/Layout/Header";
 import { Footer } from "~/components/adaptive-ui/Layout/Footer";
-import DoomGUI from "~/components/DoomGUI";
+import DoomGUI from "~/components/adaptive-ui/DOOM/DoomGUI";
 import { Heading } from "~/components/adaptive-ui/Text/Heading";
 
 export const meta: MetaFunction = () => {

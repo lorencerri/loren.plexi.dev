@@ -27,6 +27,7 @@
     "@remix-run/serve": "^2.1.0-pre.0",
     "@tabler/icons-react": "^2.38.0",
     "@vercel/analytics": "^1.1.1",
+    "axios": "^1.5.1",
     "dayjs": "^1.11.10",
     "embla-carousel-react": "^7.1.0",
     "isbot": "^3.6.8",

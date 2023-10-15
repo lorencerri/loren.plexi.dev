@@ -4,7 +4,7 @@ import Logo from "~/components/Logo";
 
 import { AdaptiveLayout } from "~/components/adaptive-ui/Layout/AdaptiveLayout";
 import { Header } from "~/components/adaptive-ui/Layout/Header";
-import DoomGUI from "~/components/DOOM/DoomGUI";
+import DoomGUI from "~/components/adaptive-ui/DOOM/DoomGUI";
 
 export const meta: MetaFunction = () => {
   return [{ title: "Play DOOM Party!" }];

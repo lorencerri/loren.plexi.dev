@@ -11,12 +11,11 @@ export default function CustomHero() {
           freelance software developer, student, educator, and open source
           maintainer. Currently{" "}
           <Text
-            size="xl"
-            fw={900}
             variant="gradient"
             gradient={{ from: "green", to: "cyan", deg: 90 }}
+            span
           >
-            Open
+            open
           </Text>{" "}
           for commissions, feel free to contact me via Twitter or Discord.
         </Text>

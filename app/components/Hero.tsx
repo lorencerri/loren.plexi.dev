@@ -8,8 +8,17 @@ export default function CustomHero() {
       <Container p={0} size={600}>
         <Text size="lg" c="dimmed" className={classes.description}>
           I'm <span className="highlight">Loren Cerri</span>, a full-stack
-          freelance software developer, student, educator,
-          and open source maintainer.
+          freelance software developer, student, educator, and open source
+          maintainer. Currently{" "}
+          <Text
+            size="xl"
+            fw={900}
+            variant="gradient"
+            gradient={{ from: "green", to: "cyan", deg: 90 }}
+          >
+            Open
+          </Text>{" "}
+          for commissions, feel free to contact me via Twitter or Discord.
         </Text>
       </Container>
 
